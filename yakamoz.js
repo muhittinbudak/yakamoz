@@ -18,7 +18,7 @@ $("div.centered").addClass("pmsifir");// ortaki containeri sıfırlandı
 $("div.copyright").css("display", "none");  //copyright unvisible  
 $("div#post-body-672623985775028581.post-body.entry-content.float-container").addClass("pmsifir");  
 $("div.search").addClass("pmsifir");  
-$("header.centered-top-container").addClass("pmsifir");       
+$("header.centered-top-container").addClass("pmsifir");   
 //-- blogspot ana sayfa ayarları bitiş
 //-- navbar click 
 $('#nav-menu a').on('click', function() {
@@ -28,6 +28,46 @@ $('#nav-menu a').on('click', function() {
 }); 
 //--- click bitiş     
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
 $("#dugme").click(function (e) { 
 
 alert("Merhaba Üzümcü IĞdır.");
