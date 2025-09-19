@@ -30,43 +30,6 @@ $('#nav-menu a').on('click', function() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         
 $("#dugme").click(function (e) { 
 
