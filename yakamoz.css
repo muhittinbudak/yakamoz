@@ -62,3 +62,92 @@ background-color: #337AB7;
   display: none;
 }
 /*navbar ayarları bitiş*/  
+a:visited {
+  color:white;
+}  
+
+.strait-25 {
+font-family: 'Strait', sans-serif;
+font-size: 25px;  
+line-height:110%;  
+} 
+
+.strait-16 {
+font-family: 'Strait', sans-serif;
+font-size: 16px;
+}
+.strait-13 {
+font-family: 'Strait', sans-serif;
+font-size: 13px;
+
+}
+
+.strait {
+font-family: 'Strait', sans-serif;  
+}  
+.btn {
+    white-space:normal !important;
+    word-wrap: break-word; 
+}
+.pmbesifir {padding:0px 12px !important ;margin:0px !important;  }  
+.pmsifir {padding:0 !important ;margin:0 !important;  }   
+  
+    /* ----------------------------------------------------------------------------------------------------------------- */
+
+
+    
+    /* Main Article [Module]
+    -------------------------------------
+    * Featured Article Thumbnail
+    * have a image and a text title.
+    */
+
+
+    /* Featured Articles List [BS3]
+    --------------------------------------------
+    * show the last 3 articles post
+    */
+
+    
+
+    /* Style to article Author */
+    .by-author {
+      line-height: 1.0;
+      font-size: 12px;
+      color: #000;
+      padding:0;
+      margin:0;
+    }
+    .clred {
+        color:red;
+    }
+    .clblue {
+        color:blue;
+    }
+    
+
+    
+/*-------------------------------------------------------------------------------------------------------------------------------------well*/
+  
+.well {
+      color: white;
+      transition: background 0.3s ease;
+    }
+
+    /* Arka plan renkleri */
+    @media (max-width: 767px) {
+      .soltaraf { }
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .soltaraf { width:97% }
+    }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .soltaraf { width:60% }
+    }
+    @media (min-width: 1200px) {
+      .soltaraf { width:60% }
+    }
+
+    
+
+
