@@ -1,0 +1,53 @@
+/*navbar ayarları başlangıç*/
+nav .btn-group {
+  margin: 0.8rem 2rem 0 0;
+}
+
+@media(max-width: 48em){
+  nav .btn-group {
+    position: absolute;
+    top: 0;
+    right: 4em;
+  }
+}
+
+#nav-menu {
+  margin-right: 1rem;
+}
+
+.navbar-default {
+  background-color: #FFBE52 !important;
+  
+}
+a.navbar-brand {
+       color: #000 !important;
+}
+
+#nav-menu ul li a {
+       color: #000 !important;
+}
+
+.navbar-default .navbar-toggle .icon-bar
+{
+    background-color: #fff;
+    
+}
+
+.navbar-toggle {
+background-color: #337AB7;
+
+} 
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #214E75;
+}    
+    
+.navbar-default .navbar-toggle {
+    border-color: #214E75;
+}      
+  
+
+.hidden-element {
+  display: none;
+}
+/*navbar ayarları bitiş*/  
