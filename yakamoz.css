@@ -1,3 +1,14 @@
+body {
+  padding-top:35px;
+}
+
+.btn {
+    white-space:normal !important;
+    word-wrap: break-word; 
+}
+.pmbesifir {padding:0px 12px !important ;margin:0px !important;  }  
+.pmsifir {padding:0 !important ;margin:0 !important;  }    
+
 /*navbar ayarları başlangıç*/
 nav .btn-group {
   margin: 0.8rem 2rem 0 0;
