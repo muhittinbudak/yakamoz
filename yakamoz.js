@@ -3,7 +3,7 @@ $(document).ready(function(){
 //-- blogspot Ana sayfa ayarları başlangıç
 $(".entry-title").addClass("strait-25"); 
 $(".blog-posts.hfeed.container").addClass("pmsifir");  
-$("#page_body article.post-outer-container").addClass("pmbesifir"); // en dış container sol padding 5px yapıldı
+//$("#page_body article.post-outer-container").addClass("pmbesifir"); // en dış container sol padding 5px yapıldı
 $("Blog1").addClass("pmsifir");  
 $("#page_body .post-title.entry-title").css("display", "none");  
 $("div.flat-icon-button.ripple").css("display", "none");    //paylaş butonu yokedildi.
