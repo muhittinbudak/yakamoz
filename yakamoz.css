@@ -184,5 +184,162 @@ font-family: 'Strait', sans-serif;
     }
 
     
+.row.display-flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+  }
 
+  .display-flex > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .thumbnail {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+  }
+
+  .thumbnail:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .thumbnail img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .caption {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .caption h3 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+
+  .caption h4 {
+    font-size: 15px;
+    margin: 0 0 10px 0;
+    font-weight: normal;
+    color: #666;
+  }
+
+  .caption small {
+    display: block;
+    margin-bottom: 10px;
+    color: gray;
+  }
+
+  .caption p {
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 10px;
+  }
+
+  .caption .btn-group {
+    margin-top: auto;
+  }
+   
+   #manset_p p {
+   font-size:18px;
+   }
+   
+/*OYAKSORUCEVAP CSS*/   
+    /* Arka plan renkleri */
+    @media (max-width: 767px) {
+     .habertext1 { font-size: 23px; color:blue; }
+     .post-content {  top: 19%;}
+      .oyakitem {padding:0 !important ;margin:0 !important;  } 
+      
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+     .habertext1 { font-size: 23px; color:red; }
+     .post-content {  top: 10%;}
+    }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .habertext1 { font-size: 23px; color:green; }
+     .post-content {  top: 5%;}
+    }
+    @media (min-width: 1200px) {
+     .habertext1 { font-size: 23px;color:purple; }
+     .post-content {  top: 5%;}
+    }
+
+    .row.display-flex {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -15px;
+    }
+
+    .display-flex > [class*='col-'] {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 30px;
+    }
+
+    .thumbnail {
+      flex: 1 0 auto;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .thumbnail img {
+      width: 100%;
+      /*object-fit: cover;  Resmi kırparak hizala */
+      border-radius: 10px 10px 0 0;
+    }
+
+    .caption1 {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding: 15px;
+    }
+
+    .caption1 h3 {
+      font-size: 18px;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .caption1 p {
+      flex-grow: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    
+
+    .caption1 .btn-group {
+      margin-top: auto;
+    }
+   /* Problemin çözümü burada başlıyor */
+     .post-content {
+     background: transparent;
+     left: 50%;
+     position: absolute;
+     transform: translateX(-50%);
+     text-align: center;
+     width: 80%; /* Resim ile aynı genişlikte olması için */
+     box-sizing: border-box; /* Padding'in genişliği artırmaması için */
+     padding: 0 5px; /* Yatayda boşluk bırakmak için */
+     }
+   /* OYAKSORUCEVAP CSS BİTİŞ */    
 
