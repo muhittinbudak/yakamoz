@@ -8,7 +8,7 @@ $("#dugme").click(function (e) {
 
 alert("Merhaba Üzümcü IĞdır.");
     //$("#sonuc").text("eik");
-    //h3 id="tarih"
+    //h3 id="tarih".
     //  e.preventDefault();
 });
 
