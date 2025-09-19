@@ -55,48 +55,14 @@ background-color: #337AB7;
     
 .navbar-default .navbar-toggle {
     border-color: #214E75;
-}   
-
-//------------------------------
- /* Arka plan renkleri */
-    @media (max-width: 767px) {
-      .soltaraf { margin:0;padding:0; }
-    }
-    @media (min-width: 768px) and (max-width: 991px) {
-      .soltaraf { width:97%;margin:7px 0;padding:0; }
-    }
-    @media (min-width: 992px) and (max-width: 1199px) {
-      .soltaraf { width:60%;margin:7px 0;padding:0; }
-    }
-    @media (min-width: 1200px) {
-      .soltaraf { width:60%;margin:7px 0;padding:0; }
-    }  
-  
-#manset_url:link {
-    text-decoration:none;
-}
-/* ziyaret edilmiş link */
-#manset_url:visited {
-text-decoration:none;
-}
-
-/* fare işaretçisi link üzerinde */
-#manset_url:hover {
-text-decoration:none !important;
-}
-
-/* tam tıklama anı */
-#manset_url:active {
-    text-decoration:none !important;
-}
-
-
+}      
   
 
 .hidden-element {
   display: none;
 }
-/*navbar ayarları bitiş*/ 
+/*navbar ayarları bitiş*/  
+
 a:visited {
   color:white;
 }  
@@ -183,7 +149,39 @@ font-family: 'Strait', sans-serif;
       .soltaraf { width:60% }
     }
 
-    
+  /* Arka plan renkleri */
+    @media (max-width: 767px) {
+      .soltaraf { margin:0;padding:0; }
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .soltaraf { width:97%;margin:7px 0;padding:0; }
+    }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .soltaraf { width:60%;margin:7px 0;padding:0; }
+    }
+    @media (min-width: 1200px) {
+      .soltaraf { width:60%;margin:7px 0;padding:0; }
+    }  
+  
+#manset_url:link {
+    text-decoration:none;
+}
+/* ziyaret edilmiş link */
+#manset_url:visited {
+text-decoration:none;
+}
+
+/* fare işaretçisi link üzerinde */
+#manset_url:hover {
+text-decoration:none !important;
+}
+
+/* tam tıklama anı */
+#manset_url:active {
+    text-decoration:none !important;
+}   
+
+/*CARDS BAŞLANGINÇ*/
 .row.display-flex {
     display: flex;
     flex-wrap: wrap;
@@ -342,7 +340,9 @@ font-family: 'Strait', sans-serif;
      padding: 0 5px; /* Yatayda boşluk bırakmak için */
      }
    /* OYAKSORUCEVAP CSS BİTİŞ */    
-/* listeleme başlangıç*/
+/*CARDS BİTİŞ*/
+
+/*SAYFA BAŞLIK RESİM VE TİTLE KISMI BAŞLANGIÇ*/
 /* list item Restriction. */
 .main-list {
  padding-left: .5em;
@@ -398,4 +398,122 @@ font-weight:bold;
 line-height: 90%; 
 color:#000;  
   }  
-/* listeleme bitiş */
+
+/*SAYFA BAŞLIK RESİM VE TİTLE KISMI BİTİŞÇ*/
+
+
+
+
+
+/*ANDROİD BUTON BAŞLANGIÇ*/
+ .big-btn{
+                padding: 10px 0px 11px 0px;
+
+                margin-top:5px;
+            }
+
+            .big-btn i{
+                font-size: 65px;
+                margin-right: 0px !important;
+            }
+            .big-btn strong{
+                font-size: 25px;
+                text-shadow: 1px 2px 0px #34659B;
+                color: #fff;
+                line-height: 24px;
+            }
+            .big-btn .btn-text{
+                margin:6px 6px 0 0;
+            }
+
+            .big-btn small{font-size: 75%;}
+
+            .android-btn{
+
+
+                padding: 13px 17px 13px 0px;
+                background-color: #000;
+                border-color: #000;
+
+            }
+            .android-btn:hover{
+                background-color: #272727;
+            }
+
+            .android-btn i{
+                font-size: 55px;
+            }
+
+            .android-btn .btn-text{
+                margin-top: 0px;
+            }
+            .android-btn .btn-text:hover{
+                color:#fff;
+            }
+
+            .android-btn strong{
+
+                text-shadow: none;
+                color: #fff;
+                line-height: 24px;
+            }
+
+/*ANDROİD BUTON BİTİŞ*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
