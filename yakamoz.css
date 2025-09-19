@@ -342,4 +342,60 @@ font-family: 'Strait', sans-serif;
      padding: 0 5px; /* Yatayda boşluk bırakmak için */
      }
    /* OYAKSORUCEVAP CSS BİTİŞ */    
+/* listeleme başlangıç*/
+/* list item Restriction. */
+.main-list {
+ padding-left: .5em;
+padding-right: .5em;  
+}
 
+.main-list .media {
+ /* margin-top: 20px; */
+  padding-bottom: 15px;
+  border-bottom: 1px solid #3C3C3C;
+}
+.main-list .media:first-child {
+/*      border-top: 2px solid blue;*/
+  padding-top:15px;
+}
+.main-list .media:last-child {
+  /*border: none;*/
+   border-bottom: 1px solid #D6D6D6;
+}
+.habertext {
+border: 1px solid #D9534F;
+}
+
+/* list item shortening a long sentence. */
+
+.listitem {
+overflow: hidden;
+width:100%;
+display: -webkit-box;
+-webkit-line-clamp: 1;
+-webkit-box-orient: vertical;
+}
+
+.image-container {
+  width: 150px;
+  height: 100px;
+  overflow: hidden;  /* Dışarı taşan kısmı gizle */
+  position: relative;
+  border-radius: 5px; /* Köşeleri yuvarlatır */
+}
+
+.image-container img {
+  width: 100%;    /* Genişliği kapsayacak şekilde ayarla */
+  height: auto;    /* Oranı koru (sıkıştırma yok) */
+  display: block;
+  position: relative;
+  top: 0;              /* Gerekirse yukarıdan kırp */
+}  
+  .media-heading {
+font-weight:bold;
+  }  
+  .by-author, .media-heading { 
+line-height: 90%; 
+color:#000;  
+  }  
+/* listeleme bitiş */
