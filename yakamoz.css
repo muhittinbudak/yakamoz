@@ -55,7 +55,42 @@ background-color: #337AB7;
     
 .navbar-default .navbar-toggle {
     border-color: #214E75;
-}      
+}   
+
+//------------------------------
+ /* Arka plan renkleri */
+    @media (max-width: 767px) {
+      .soltaraf { margin:0;padding:0; }
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .soltaraf { width:97%;margin:7px 0;padding:0; }
+    }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .soltaraf { width:60%;margin:7px 0;padding:0; }
+    }
+    @media (min-width: 1200px) {
+      .soltaraf { width:60%;margin:7px 0;padding:0; }
+    }  
+  
+#manset_url:link {
+    text-decoration:none;
+}
+/* ziyaret edilmiş link */
+#manset_url:visited {
+text-decoration:none;
+}
+
+/* fare işaretçisi link üzerinde */
+#manset_url:hover {
+text-decoration:none !important;
+}
+
+/* tam tıklama anı */
+#manset_url:active {
+    text-decoration:none !important;
+}
+
+
   
 
 .hidden-element {
