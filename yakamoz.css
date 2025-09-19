@@ -137,7 +137,7 @@ font-family: 'Strait', sans-serif;
 
     /* Arka plan renkleri */
     @media (max-width: 767px) {
-      .soltaraf { }
+      .soltaraf { padding:0 !important ;margin:0 !important; }
     }
     @media (min-width: 768px) and (max-width: 991px) {
       .soltaraf { width:97% }
