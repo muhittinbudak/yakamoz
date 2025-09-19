@@ -20,7 +20,7 @@ $("div#post-body-672623985775028581.post-body.entry-content.float-container").ad
 $("div.search").addClass("pmsifir");  
 $("header.centered-top-container").addClass("pmsifir");       
 //-- blogspot ana sayfa ayarları bitiş
-//-- navbar click
+//-- navbar click 
 $('#nav-menu a').on('click', function() {
         if ($('.navbar-toggle').is(':visible')) {
             $('.navbar-collapse').collapse('hide');
