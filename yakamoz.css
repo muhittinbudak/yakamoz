@@ -9,6 +9,16 @@ body {
 body.item-view.version-1-3-3.variant-indie_light { padding:0 !important;  margin:0 !important; }  /* en dış */
 div.widget.Blog .blog-posts .post-outer-container { padding:0 8px; }    /* en dışın bir içi */
 .pmsifir {padding:0 !important ;margin:0 !important;  }    
+.uzunkelime {
+  overflow: hidden;
+  width:100%;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+header.centered-top-container {
+  display:none;
+}
 
 /*navbar ayarları başlangıç*/
 nav .btn-group {
