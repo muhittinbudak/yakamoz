@@ -16,9 +16,10 @@ div.widget.Blog .blog-posts .post-outer-container { padding:0 8px; }    /* en d�
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
-header.centered-top-container {
-  display:none;
+header.centered-top-container, div.centered-top-placeholder.cloned {
+    display:none;
 }
+  
 
 /*navbar ayarları başlangıç*/
 nav .btn-group {
