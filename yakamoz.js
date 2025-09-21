@@ -27,7 +27,18 @@ $('#nav-menu a').on('click', function() {
         }
 }); 
 //--- click bitiş     
+// Herhangi bir yere tıklandığında menüyü kapatma
+$(document).on('click', function (event) {
+    const navMenu = $('#nav-menu');
+    const navToggle = $('.navbar-toggle');
 
+    // Tıklanan eleman menünün veya toggle butonunun içinde değilse menüyü kapat
+    if (!navMenu.is(event.target) && navMenu.has(event.target).length === 0 && !navToggle.is(event.target) && navToggle.has(event.target).length === 0) {
+        if (navMenu.hasClass('in')) {
+            navMenu.collapse('hide');
+        }
+    }
+}); 
 
 
         
