@@ -20,6 +20,18 @@ header.centered-top-container, div.centered-top-placeholder.cloned {
     display:none;
 }
   
+figcaption {
+  position: sticky;
+  top: 0;
+  background-color: #F3F3F3;
+  padding: 10px;
+  font-size: 20px;
+}  
+  #newsItemContainer p {
+  padding: 10px;    
+  font-size: 20px;  
+}
+ 
 
 /*navbar ayarları başlangıç*/
 nav .btn-group {
