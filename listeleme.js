@@ -271,7 +271,7 @@ function displayNewsRss2Json(items) {
   
 $("#footer").load("https://muhittinbudak.github.io/yakamoz/footer.html", function(responseTxt, statusTxt, xhr){ if(statusTxt == "success") { } if(statusTxt == "error") { $("#footer").html("Yükleniyor...");} });  
 
-  
+$("#ustmenu").load("https://muhittinbudak.github.io/yakamoz/ustmenu.html", function(responseTxt, statusTxt, xhr){ if(statusTxt == "success") { } if(statusTxt == "error") { $("#footer").html("Yükleniyor...");} });    
   
   
 });  
