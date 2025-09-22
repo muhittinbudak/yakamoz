@@ -1,7 +1,7 @@
 $(document).ready(function(){
 // v.11
   
-  var OBPsayfam ="https://oyakbilgi.blogspot.com/p/rss-test.html";
+  var OBPsayfam ="https://oyakbilgi.blogspot.com/p/obp.html";
   var params = new URLSearchParams(window.location.search);
   var urlkonu = params.get("urlkonu");
   var urlsayfa = params.get("urlsayfa");  
