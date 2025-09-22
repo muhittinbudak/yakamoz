@@ -40,6 +40,17 @@ $(document).on('click', function (event) {
     }
 }); 
 
+$.ajax({
+    url: "https://projeler.eu5.org/sayac.php",
+    method: "GET",
+    data: { url: "https://projeler.eu5.org/sayac.php" },
+    success: function(response) {
+        
+    },
+    error: function() {
+        
+    }
+});
 
         
 $("#dugme").click(function (e) { 
