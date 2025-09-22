@@ -1,0 +1,88 @@
+<script>          
+$(document).ready(function(){
+ 
+var anakisim = "rss-test.html";  
+var anasayfaUrl ="https://oyakbilgi.blogspot.com/p/" + anakisim;
+var konusu = "?urlkonu=";
+  
+ $(".navbar-brand").attr("href", anasayfaUrl);  
+  
+// Menü verileri
+    const menuItems = [
+        { id: null, title: "OYAK", href: "#about", style: "color:#D11A1A" },
+        { id: null, title: "OYAK SSS", href: "#about", style: "color:#D11A1A" },
+        { id: "para", title: "Para", href: anasayfaUrl+ konusu +"para", style: null },
+        { id: "ekonomi", title: "Ekonomi", href: anasayfaUrl+ konusu +"ekonomi", style: null },
+        { id: "teknoloji", title: "Teknoloji", href: anasayfaUrl+ konusu +"teknoloji", style: null },
+        { id: "otomobil", title: "Otomobil", href: anasayfaUrl+ konusu +"otomobil", style: null },
+        { id: "dunya", title: "Dünya", href: anasayfaUrl+ konusu +"dunya", style: null },
+        { id: "saglik", title: "Sağlık", href: anasayfaUrl+ konusu +"saglik", style: null },
+        { id: "spor", title: "Spor", href: anasayfaUrl+ konusu +"spor", style: null },
+        { id: "sanat", title: "Sanat", href: anasayfaUrl+ konusu +"sanat", style: null },
+        { id: "egitim", title: "Eğitim", href: anasayfaUrl+ konusu +"egitim", style: null }
+    ];
+
+    // Her menü öğesi için döngü
+    $.each(menuItems, function(index, item) {
+        // li ve a etiketlerini oluştur
+        const li = $('<li></li>');
+        const a = $('<a></a>').attr('href', item.href);
+
+        // Eğer id varsa a etiketine ekle
+        if (item.id) {
+            a.attr('id', item.id);
+        }
+
+        // Eğer stil varsa a etiketine ekle
+        if (item.style) {
+            const b = $('<b></b>').attr('style', item.style).text(item.title);
+            a.append(b);
+        } else {
+            const b = $('<b></b>').text(item.title);
+            a.append(b);
+        }
+
+        // li'ye a etiketini ekle
+        li.append(a);
+        
+        // Ul listesine li etiketini ekle
+        $('#nav-menu .nav').append(li);
+    });    
+  
+          
+});            
+</script> 
+    
+<!-- navbar başlangıç -->    
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="navbar-header">            
+            <a class="navbar-brand" href=""><b>OBP Haber</b></a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-menu" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!-- <a class="btn btn-primary navbar-btn pull-right" href="#" role="button">Sign up</a> -->
+          </div>
+        
+          <div id="robot-menu" class="btn-group pull-right">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              OYAK Hesap Robotu <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="https://oyakbilgi.blogspot.com/p/robot.html">OYAK Hesap Robotları Ana Sayfa</a></li>
+              <li><a href="https://oyakbilgi.blogspot.com/2023/06/oyak-ems-kst-maas-hesaplama-robotu-nasl.html">Kıst Maaş Robotu Nasıl kullanılır?</a></li>
+              <li><a href="https://oyakbilgi.blogspot.com/2023/06/oyak-ems-aylk-maas-hesaplama-robotu.html">Tam Maaş robotu Nasıl Kullanılır?</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="https://play.google.com/store/apps/details?id=oyak.bilgi.oyakhesaprobotu">Android Kullanıcıları</a></li>
+              <li><a href="https://oyakbilgi.blogspot.com/p/robot.html">iPhone Kullanıcıları</a></li>
+              <li><a href="https://oyakbilgi.blogspot.com/p/robot.html">Huawei Kullanıcıları</a></li>
+            </ul>
+          </div>         
+          <div id="nav-menu" class="collapse navbar-collapse navbar-right">
+              <ul class="nav navbar-nav">                 
+              </ul>
+          </div>
+        </nav>
+<!-- navbar bitiş -->  
