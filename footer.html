@@ -42,6 +42,78 @@
 
 <script>
 $(document).ready(function(){
+
+
+// haberleriYukle GİRDİĞİM OYAK OBP YAZILARI  
+  
+function haberleriYukle() {
+  
+  $.ajax({
+    url: "https://muhittinbudak.github.io/oyakbilgi/yeni.json", // PHP API URL'n
+    method: "GET",
+    dataType: "json",
+    success: function(data) {
+      let html = '<ul class="media-list main-list" style="border-top: 2px solid red;padding:0" >';
+      if (data.length > 0) {
+        
+        data.forEach(function(haber, index) { 
+
+        const params = new URLSearchParams(window.location.search); 
+        const name2 = params.get("name2"); // url den gelen name boş ise.
+html += "<li class='media'><a class='pull-left' href='" + haber.obp_weburl +"'><div class='image-container'><img class='media-object img-responsive img-rounded' src='"+ haber.obp_resim_url +"'></div></a><div class='media-body'><div class='media-heading strait-16 listitem'>" + haber.obp_title + "</div><div class='listitem by-author strait-13'>" + haber.obp_title + "</div><div class='btn-toolbar' style='margin-top:10px;'><a href='"+ haber.obp_weburl + "' class='btn btn-lg btn-primary habertext strait'>Habere Git <span class='glyphicon glyphicon-chevron-right'></span></a></div></li>";         
+        });
+
+      } else {
+        html += "<li>Henüz haber yok.</li>";
+      }
+      html += "</ul>";
+      $("#haberler").html(html);
+    },
+    error: function() {
+      $("#haberler").html("<p>Could not get data.</p>");
+    }
+  });    
+} // haberleriYukle() bitiş
+
+  
+// ekran tespitine göre başlangıç
+    // Ekran genişliğine göre Bootstrap kırılma noktasını döndüren fonksiyon
+    function getBreakpoint(width) {
+        if (width < 768) {
+        } else if (width >= 768 && width < 992) {
+          haberleriYukle();  
+         //$('#haberler').append(html);
+        // Sonra her 10 saniyede bir yeniden veriyi al
+          setInterval(haberleriYukle, 10000); // 10000 milisaniye = 10 saniye
+        } else if (width >= 992 && width < 1200) {
+          // Sayfa yüklendiğinde ilk veriyi al
+          haberleriYukle();  
+         //$('#haberler').append(html);
+        // Sonra her 10 saniyede bir yeniden veriyi al
+          setInterval(haberleriYukle, 10000); // 10000 milisaniye = 10 saniye
+        } else {
+          // Sayfa yüklendiğinde ilk veriyi al
+          haberleriYukle();  
+         //$('#haberler').append(html);
+        // Sonra her 10 saniyede bir yeniden veriyi al
+          setInterval(haberleriYukle, 10000); // 10000 milisaniye = 10 saniye
+        }
+    }
+
+    // Ekran bilgilerini güncelleyen fonksiyon
+    function updateScreenInfo() {
+        var width = $(window).width();
+        var newBreakpoint = getBreakpoint(width);
+        
+        // Kırılma noktasını ekrana yazdır
+        $("#result").html(newBreakpoint);
+    }
+    
+    // Sayfa yüklendiğinde ve pencere boyutu değiştiğinde fonksiyonu çalıştır
+    $(window).resize(updateScreenInfo);
+    updateScreenInfo();  
+// ekran tespitine göre bitiş
+	
 var today = new Date(); 
 $("span#buyil").html(today.getFullYear());
 });   
