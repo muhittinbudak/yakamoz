@@ -160,10 +160,13 @@ function runProxyRssNtvTek(rssUrl, targetId) {
             day: "2-digit", month: "long", year: "numeric",
             hour: "2-digit", minute: "2-digit"
         });
+      
+         var asilLink = getUrlRightSide(link);  
+         asilLink = OBPsayfam + "?urlkonu=" + urlkonu + "&urlsayfa=" + asilLink ;         
 
         $("#newsItemContainer").html(`
             <div class="featured-article">
-                <a href="${link}" id="manset_url">
+                <a href="${asilLink}" id="manset_url">
                     ${imageUrl ? `<img style="border-radius:5px;margin:10px 0;" src="${imageUrl}" alt="${title}" width="100%"/>` : ''}
                     <div class="block-title">
                         <h2 style="color:#910910;margin-left:10px">${title}</h2>
@@ -250,9 +253,14 @@ function runRss2JsonTek(rssUrl, targetId) {
             hour: "2-digit", minute: "2-digit"
         });
 
+
+         var asilLink = getUrlRightSide(link);  
+         asilLink = OBPsayfam + "?urlkonu=" + urlkonu + "&urlsayfa=" + asilLink ;   
+
+      
         $("#newsItemContainer").html(`
             <div class="featured-article">
-                <a href="${link}" id="manset_url">
+                <a href="${asilLink}" id="manset_url">
                     ${imageUrl ? `<img style="border-radius:5px;margin:10px 0;" src="${imageUrl}" alt="${title}" width="100%"/>` : ''}
                     <div class="block-title">
                         <h2 style="color:#910910;margin-left:10px">${title}</h2>
