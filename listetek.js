@@ -12,7 +12,7 @@ $(document).ready(function() {
 if(!urlkonu) {
 //boş
   
-tespiturlkonu = "https://www.ntv.com.tr/ekonomi.rss";  
+tespiturlkonu = "https://www.ntv.com.tr/ntvpara.rss";  
   
 } else {
 //dolu
@@ -51,7 +51,7 @@ switch(urlkonu) {
     break;      
   default:
     // Default olarak "Ekonomi" yükle
-    tespiturlkonu = "https://www.ntv.com.tr/ekonomi.rss";
+    tespiturlkonu = "https://www.ntv.com.tr/ntvpara.rss";
         break;      
    }  
 }
