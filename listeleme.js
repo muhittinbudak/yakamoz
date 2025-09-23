@@ -14,8 +14,8 @@ $(document).ready(function(){
 if(!urlkonu) {
 //boş
   
-tespiturlkonu = "https://www.ntv.com.tr/ekonomi.rss";  
-wellbaslik ="Ekonomi";
+tespiturlkonu = "https://www.ntv.com.tr/ntvpara.rss";  
+wellbaslik ="Para";
   
 } else {
 //dolu
