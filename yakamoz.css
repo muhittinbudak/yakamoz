@@ -106,6 +106,10 @@ font-family: 'Strait', sans-serif;
 font-size: 25px;  
 line-height:110%;  
 } 
+.strait-20 {
+font-family: 'Strait', sans-serif;
+font-size: 16px;
+}
 
 .strait-16 {
 font-family: 'Strait', sans-serif;
@@ -114,7 +118,6 @@ font-size: 16px;
 .strait-13 {
 font-family: 'Strait', sans-serif;
 font-size: 13px;
-
 }
 
 .strait {
