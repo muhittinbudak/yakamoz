@@ -11,12 +11,12 @@ $(document).ready(function(){
   var obpLink ="";
   
   
-if(!urlkonu) {
+if(!urlkonu || urlkonu == null) {
 //boş
   
 tespiturlkonu = "https://www.ntv.com.tr/ntvpara.rss";  
 wellbaslik ="Para";
-  
+urlkonu = "para";  
 } else {
 //dolu
 
