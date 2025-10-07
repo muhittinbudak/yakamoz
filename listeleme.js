@@ -1,5 +1,5 @@
 $(document).ready(function(){
-// v.11
+// v.12
   
   var OBPsayfam ="https://oyakbilgi.blogspot.com/p/obp.html";
   var params = new URLSearchParams(window.location.search);
@@ -105,9 +105,9 @@ obpLink = urlsayfa;
         
 //----------------------------------------------------------------------------------------------==============================================================================<<<<<<<<<<<<<<<<<<<<<< 1
 $.ajax({
-    url: "https://projeler.eu5.org/proxyrssntv.php",
+    url: "https://projeler.eu5.org/proxyrssntv1.php",
     method: "GET",
-    data: { url: "https://projeler.eu5.org/proxyrssntv.php" },
+    data: { url: "https://projeler.eu5.org/proxyrssntv1.php" },
     success: function(response) {
        //alert("çalışıyor");
        runProxyRssNtv();
@@ -121,24 +121,19 @@ $.ajax({
 //----------------------------------------------------------------------------------------------==============================================================================<<<<<<<<<<<<<<<<<<<<<< php function  
 function runProxyRssNtv() {
     var rssUrl = tespiturlkonu; // ör: "https://www.ntv.com.tr/ekonomi.rss";
-    var proxyUrl = "https://projeler.eu5.org/proxyrssntv.php";
+    var proxyUrl = "https://projeler.eu5.org/proxyrssntv1.php";
 
     if (!rssUrl) {
         console.error("Lütfen bir RSS URL'si girin.");
         return;
     }
 
-    $.getJSON(`${proxyUrl}?url=${encodeURIComponent(rssUrl)}`)
-        .done(function(data) {
-            if (data && data.entry) {
-                displayNewsProxy(data.entry);
-            } else {
-                console.error("Proxy verisi hatalı veya boş.");
-            }
-        })
-        .fail(function(jqxhr, textStatus, error) {
-            console.error("Proxy çekme hatası:", textStatus, error);
-        });
+    $.getJSON("https://projeler.eu5.org/proxyrssntv1.php?konu=" + urlkonu, function(data) {
+        if (data && data.entry) {
+            displayNewsProxy(data.entry);
+        }
+    });
+
 }
 
 function displayNewsProxy(items) {
