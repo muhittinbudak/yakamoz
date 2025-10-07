@@ -1,7 +1,6 @@
 $(document).ready(function() {
-  
- 
-  
+//listetek
+   
   var OBPsayfam = "https://oyakbilgi.blogspot.com/p/obp.html";
   var params = new URLSearchParams(window.location.search);
   var urlkonu = params.get("urlkonu");
@@ -96,9 +95,9 @@ return "";
 //gemini
 //----------------------------------------------------------------------------------------------==============================================================================<<<<<<<<<<<<<<<<<<<<<< 2
 $.ajax({
-    url: "https://projeler.eu5.org/proxyrssntv.php",
+    url: "https://projeler.eu5.org/proxyrssntv1.php",
     method: "GET",
-    data: { url: "https://projeler.eu5.org/proxyrssntv.php" },
+    data: { url: "https://projeler.eu5.org/proxyrssntv1.php" },
     success: function(response) {
         // çalışıyor
         runProxyRssNtvTek(rssUrl, targetId);
@@ -113,45 +112,19 @@ $.ajax({
         
 function runProxyRssNtvTek(rssUrl, targetId) { 
     $("#loading").show();
-    const proxyUrl = `https://projeler.eu5.org/proxyrssntv.php?url=${encodeURIComponent(rssUrl)}`;
+    const proxyUrl = `https://projeler.eu5.org/proxyrssntv1.php?url=${encodeURIComponent(rssUrl)}`;
 
-    $.ajax({
-        url: proxyUrl,
-        dataType: "json",
-        success: function(data) {
-            if (data.entry && data.entry.length > 0) {
-                if (targetId) {
-                    let found = false;
-                    $.each(data.entry, function(i, item) {
-                        if (item.id === targetId || item.link === targetId) {
-                            found = true;
-                            renderNewsProxy({
-                                title: item.title,
-                                link: item.link,
-                                contentHtml: item.content,
-                                publishedDate: item.published
-                            });
-                            return false;
-                        }
-                    });
-                    if (!found) {
-                        //showError("Proxy'de de bulunamadı.");
-                    }
-                } else {
-                    const firstItem = data.entry[0];
-                    renderNewsProxy({
-                        title: firstItem.title,
-                        link: firstItem.link,
-                        contentHtml: firstItem.content,
-                        publishedDate: firstItem.published
-                    });
-                }
-            }
-        },
-        error: function() {
-            //showError("Proxy üzerinden veri alınamadı.");
+    $.getJSON("https://projeler.eu5.org/proxyrssntv1.php?id=" + encodeURIComponent(targetId) + "&konu=" + urlkonu, function(data) {
+        if (data.entry && data.entry.length > 0) {
+            renderNewsProxy({
+                title: data.entry[0].title,
+                link: data.entry[0].link,
+                contentHtml: data.entry[0].content,
+                publishedDate: data.entry[0].published
+            });
         }
     });
+
 
     function renderNewsProxy({title, link, contentHtml, publishedDate}) {
         const tempDiv = $('<div>').html(contentHtml);
