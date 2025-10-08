@@ -248,7 +248,7 @@ text-decoration:none !important;
         /* İsteğe bağlı: Large ekranlarda 3 sütun */
         @media (min-width: 1200px) {
             .masonry-grid .obpunsur {
-                width: 33.333%; /* 3 sütun */
+                width: 50%; /* her kart yarı genişlik = 2 sütun */
             }
         }
 
