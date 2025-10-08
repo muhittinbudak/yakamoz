@@ -86,7 +86,7 @@ switch(urlkonu) {
 }
  
 $("#haberkonu").text(wellbaslik).css('background', backcolor);
-
+$("#haberkonu1").text(wellbaslik + " Haberleri");
   
   
   
