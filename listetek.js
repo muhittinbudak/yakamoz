@@ -134,7 +134,7 @@ function runProxyRssNtvTek(rssUrl, targetId) {
             day: "2-digit", month: "long", year: "numeric",
             hour: "2-digit", minute: "2-digit"
         });
-      
+         $("title").html(title + " (obp)"); 
          var asilLink = getUrlRightSide(link);  
          asilLink = OBPsayfam + "?urlkonu=" + urlkonu + "&urlsayfa=" + asilLink ;         
 
@@ -226,7 +226,6 @@ function runRss2JsonTek(rssUrl, targetId) {
             day: "2-digit", month: "long", year: "numeric",
             hour: "2-digit", minute: "2-digit"
         });
-
         $("title").html(title + " (obp)"); 
          var asilLink = getUrlRightSide(link);  
          asilLink = OBPsayfam + "?urlkonu=" + urlkonu + "&urlsayfa=" + asilLink ;   
