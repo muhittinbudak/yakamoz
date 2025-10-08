@@ -1,5 +1,5 @@
 $(document).ready(function(){
-// v.11
+// v.12
   
 $.ajax({
   url: "https://projeler.eu5.org/proxyrssntv1.php?url=test",
