@@ -1,7 +1,19 @@
 $(document).ready(function(){
-// v.12
+// v.11
   
-  var OBPsayfam ="https://oyakbilgi.blogspot.com/p/obp.html";
+$.ajax({
+  url: "https://projeler.eu5.org/proxyrssntv1.php?url=test",
+  method: "GET",
+  success: function (response) {
+    console.log(response); // {"ok":"TAMAM!","url":"test"}
+  },
+  error: function () {
+    console.log("Bağlantı hatası!");
+  }
+});
+  
+  
+  var OBPsayfam ="https://oyakbilgi.blogspot.com/p/busayfa.html";
   var params = new URLSearchParams(window.location.search);
   var urlkonu = params.get("urlkonu");
   var urlsayfa = params.get("urlsayfa");  
@@ -13,10 +25,9 @@ $(document).ready(function(){
   
 if(!urlkonu || urlkonu == null) {
 //boş
-  
 tespiturlkonu = "https://www.ntv.com.tr/ntvpara.rss";  
 wellbaslik ="Para";
-urlkonu = "para";  
+urlkonu = "ntvpara";  
 } else {
 //dolu
 
@@ -26,7 +37,7 @@ switch(urlkonu) {
     tespiturlkonu = "https://www.ntv.com.tr/ekonomi.rss";
     wellbaslik ="Ekonomi";  
     break;
- case "para":
+ case "ntvpara":
     tespiturlkonu = "https://www.ntv.com.tr/ntvpara.rss";
     wellbaslik ="Para";backcolor ="#03007F";
     break;    
