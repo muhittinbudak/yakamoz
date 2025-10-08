@@ -61,6 +61,7 @@ switch(urlkonu) {
 if(!urlsayfa) {
 //boş ise
   tespiturlsayfa = "";
+   if(urlkonu == null) urlkonu = "ntvpara";  
   
 } else {  
   
