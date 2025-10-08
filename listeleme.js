@@ -13,7 +13,7 @@ $.ajax({
 });
   
   
-  var OBPsayfam ="https://oyakbilgi.blogspot.com/p/busayfa.html";
+  var OBPsayfam ="https://oyakbilgi.blogspot.com/p/obp.html";
   var params = new URLSearchParams(window.location.search);
   var urlkonu = params.get("urlkonu");
   var urlsayfa = params.get("urlsayfa");  
