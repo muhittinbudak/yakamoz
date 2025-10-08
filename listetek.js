@@ -1,6 +1,6 @@
 $(document).ready(function() {
-//listetek
-   
+//listetek 
+  
   var OBPsayfam = "https://oyakbilgi.blogspot.com/p/obp.html";
   var params = new URLSearchParams(window.location.search);
   var urlkonu = params.get("urlkonu");
@@ -21,7 +21,7 @@ switch(urlkonu) {
   case "ekonomi":
     tespiturlkonu = "https://www.ntv.com.tr/ekonomi.rss";
     break;
- case "para":
+ case "ntvpara":
     tespiturlkonu = "https://www.ntv.com.tr/ntvpara.rss";      
     break;    
  case "egitim":
