@@ -28,6 +28,7 @@ if(!urlkonu || urlkonu == null) {
 tespiturlkonu = "https://www.ntv.com.tr/ntvpara.rss";  
 wellbaslik ="Para";
 urlkonu = "ntvpara";  
+$("title").text(wellbaslik);  
 } else {
 //dolu
 
@@ -83,6 +84,7 @@ switch(urlkonu) {
     wellbaslik ="Para";
         break;      
    }  
+  $("title").text(wellbaslik);
 }
  
 $("#haberkonu").text(wellbaslik).css('background', backcolor);
