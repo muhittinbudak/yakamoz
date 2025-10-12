@@ -26,7 +26,7 @@ $.ajax({
 if(!urlkonu || urlkonu == null) {
 //boş
 tespiturlkonu = "https://www.ntv.com.tr/ntvpara.rss";  
-wellbaslik ="Para";
+wellbaslik ="OYAK";
 urlkonu = "ntvpara";  
 $("title").text(wellbaslik);  
 } else {
