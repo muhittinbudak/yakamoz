@@ -81,7 +81,7 @@ switch(urlkonu) {
   default:
     // Default olarak "Ekonomi" yükle
     tespiturlkonu = "https://www.ntv.com.tr/ntvpara.rss";
-    wellbaslik ="Para";
+    wellbaslik ="OYAK";
         break;      
    }  
   $("title").text(wellbaslik);
