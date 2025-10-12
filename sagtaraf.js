@@ -21,7 +21,7 @@ $(document).ready(function() {
                 var link  = item.link;
 
                 htmlContent += `
-                    <div class="hidden-xs  col-sm-12 col-md-12">
+                    <div class="hidden-xs col-xs-12 col-sm-12 col-md-4">
                         <div class="thumbnail1">
                             <a href="${link}">
                                     <div class="well well-lg arka">
