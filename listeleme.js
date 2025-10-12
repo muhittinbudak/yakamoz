@@ -26,7 +26,7 @@ $.ajax({
 if(!urlkonu || urlkonu == null) {
 //boş
 tespiturlkonu = "https://www.ntv.com.tr/ntvpara.rss";  
-wellbaslik ="OYAK";
+wellbaslik ="OBP Haber";
 urlkonu = "ntvpara";  
 $("title").text(wellbaslik);  
 } else {
@@ -81,7 +81,7 @@ switch(urlkonu) {
   default:
     // Default olarak "Ekonomi" yükle
     tespiturlkonu = "https://www.ntv.com.tr/ntvpara.rss";
-    wellbaslik ="OYAK";
+    wellbaslik ="OBP Haber";
         break;      
    }  
   $("title").text(wellbaslik);
