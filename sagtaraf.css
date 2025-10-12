@@ -1,0 +1,65 @@
+    /* Arka plan renkleri */
+
+      .habertext1 { 
+        font-size: 20px; 
+        color:#000;  }
+  
+  
+ /* Arka plan renkleri */
+    @media (max-width: 767px) {
+      .habertext1 { font-size: 18px;text-decoration:none; }
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .habertext1 { font-size: 20px; }
+    }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .habertext1 { font-size: 20px; }
+    }
+    @media (min-width: 1200px) {
+      .habertext1 { font-size: 22px; }
+    }  
+    
+    .row.display-flex {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -15px;
+    }
+
+    .thumbnail1 a { 
+        text-decoration: none !important; /* Alt çizgiyi tüm durumlarda (normal, hover, active) kaldırır */
+        
+    }  
+    .display-flex > [class*='col-'] {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 30px;
+    }
+
+    .thumbnail1 {
+      flex: 1 0 auto;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      border:1px solid #9E9E9E;
+      border-radius:5px;
+      margin:5px 0;
+      padding:5px;
+    }
+
+   .caption1 {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+    }
+    .caption1 .btn-group {
+      margin-top: auto;
+    }
+    .arka {
+    background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhwm7Jm_vvsYMd7pScTEMQ6C1wlam0O8c7Tv1ZSYzgd0KdpBbv1eaOQjLpD7xLJWvLl1fyiyTaVaP6x67jAuoKRbN7AYtvi1yreEnnDK0NpbjBH3K3FXmeL8nkfdxWY85wybxvjie2YJBCbuFLdQbz4l5Xyy2THR7OBng5uJz-JiUJLhL-bBAd5WX2PkFSx/s1600/obp-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% auto;    
+    max-width: 100%; /* Mobilde taşmasını engeller */
+    margin-bottom:8px;
+}
