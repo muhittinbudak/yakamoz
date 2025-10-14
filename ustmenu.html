@@ -1,5 +1,9 @@
 <script>          
 $(document).ready(function(){
+  
+var OBPsayfam = "https://oyakbilgi.blogspot.com/p/obp.html";
+var params = new URLSearchParams(window.location.search);
+var urlkonu = params.get("urlkonu");  
  
 var anakisim = "obp.html";  
 var anasayfaUrl ="https://oyakbilgi.blogspot.com/p/" + anakisim;
@@ -9,8 +13,8 @@ var konusu = "?urlkonu=";
   
 // Menü verileri
     const menuItems = [
-        { id: null, title: "OYAK", href: "https://oyakbilgi.blogspot.com/p/oyak.html", style: "color:#D11A1A" },
-        { id: null, title: "OYAK SSS", href: "https://oyakbilgi.blogspot.com/p/oyak-ems-sorular-cevaplar.html", style: "color:#D11A1A" },
+        { id: "oyak", title: "OYAK", href: "https://oyakbilgi.blogspot.com/p/oyak.html", style: "color:#D11A1A" },
+        { id:  "sss", title: "OYAK SSS", href: "https://oyakbilgi.blogspot.com/p/oyak-ems-sorular-cevaplar.html", style: "color:#D11A1A" },
         { id: "ntvpara", title: "Para", href: anasayfaUrl+ konusu +"ntvpara", style: null },
         { id: "ekonomi", title: "Ekonomi", href: anasayfaUrl+ konusu +"ekonomi", style: null },
         { id: "teknoloji", title: "Teknoloji", href: anasayfaUrl+ konusu +"teknoloji", style: null },
@@ -27,10 +31,15 @@ var konusu = "?urlkonu=";
         // li ve a etiketlerini oluştur
         const li = $('<li></li>');
         const a = $('<a></a>').attr('href', item.href);
+      
+        if(item.id == urlkonu){
+        li.css({"background": "white", "border-radius": "5px"});
+        }
 
         // Eğer id varsa a etiketine ekle
         if (item.id) {
             a.attr('id', item.id);
+     
         }
 
         // Eğer stil varsa a etiketine ekle
@@ -85,4 +94,4 @@ var konusu = "?urlkonu=";
               </ul>
           </div>
         </nav>
-<!-- navbar bitiş -->  
+<!-- navbar bitiş -->    
