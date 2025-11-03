@@ -4,7 +4,7 @@ $(document).ready(function(){
       function haberleriYukle() {
 
         $.ajax({
-          url: "https://depokod.github.io/oyak/yeni.json", // PHP API URL'n 
+          url: "https://oyakbilgi.eu5.org/yeni.json", // PHP API URL'n 
           method: "GET",
           dataType: "json",
           success: function(data) {
