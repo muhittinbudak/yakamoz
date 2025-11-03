@@ -24,7 +24,7 @@ $(document).ready(function(){
             $("#haberler").html(html);
           },
           error: function() {
-            $("#haberler").html("<p>Could not get data.</p>");
+            $("#haberler").html("<p>Could not get data...</p>");
           }
         });    
       } // haberleriYukle() bitiş     
