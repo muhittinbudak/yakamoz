@@ -14,7 +14,7 @@ $(document).ready(function(){
               data.forEach(function(haber, index) { 
 
 
-            html += "<li class='media'><a class='pull-left' href='" + haber.obp_weburl +"'><div class='image-container'><img class='media-object img-responsive img-rounded' style='border: 1px solid #D6D6D6' src='"+ haber.obp_resim_url +"'></div></a><div class='media-body'><div class='media-heading strait-16 listitem'>" + haber.obp_title + "</div><div class='listitem by-author strait-13'>" + haber.obp_title + "</div><div class='btn-toolbar' style='margin-top:10px;'><a href='"+ haber.obp_weburl + "' class='btn btn-lg btn-primary habertext strait'>Habere Git <span class='glyphicon glyphicon-chevron-right'></span></a></div></li>";         
+            html += "<li class='media'><a class='pull-left' href='" + haber.obp_weburl +"'><div class='image-container'><img class='media-object img-responsive img-rounded !important;' style='border: 1px solid #D6D6D6' src='"+ haber.obp_resim_url +"'></div></a><div class='media-body'><div class='media-heading strait-16 listitem'>" + haber.obp_title + "</div><div class='listitem by-author strait-13'>" + haber.obp_title + "</div><div class='btn-toolbar' style='margin-top:10px;'><a href='"+ haber.obp_weburl + "' class='btn btn-lg btn-primary habertext strait'>Habere Git <span class='glyphicon glyphicon-chevron-right'></span></a></div></li>";         
               });
 
             } else {
