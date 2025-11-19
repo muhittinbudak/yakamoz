@@ -4,7 +4,7 @@ $(document).ready(function(){
       function haberleriYukle() {
 
         $.ajax({
-          url: "https://projeler.eu5.org/cevap.php", // PHP API URL'n 
+          url: "https://muhittinbudak.github.io/oyakbilgi/yeni.json", // PHP API URL'n 
           method: "GET",
           dataType: "json",
           success: function(data) {
