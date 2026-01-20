@@ -516,4 +516,7 @@ color:#000;
   .fosYesil {
     background-color:#74FF98;
   }     
-  
+  .btn {
+    white-space:normal !important;
+    word-wrap: break-word; 
+}
