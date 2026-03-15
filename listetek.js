@@ -172,6 +172,11 @@ function runProxyRssNtvTek(rssUrl, targetId) {
                 'margin': '8px 0'
             });
 
+        /* BOŞ PARAGRAFLARI SİL */
+        $("#newsItemContainer p").filter(function () {
+            return !$(this).text().replace(/\u00A0/g, '').trim();
+        }).remove();      
+
         $("#loading").hide();
         $("#success-message").show();
     }
