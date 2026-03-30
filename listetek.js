@@ -268,6 +268,11 @@ function runRss2JsonTek(rssUrl, targetId) {
             $("#newsItemContainer").find('strong').each(function() {
               $(this).before('<br>').after('<br>');
             });
+
+           $("#newsItemContainer span").css({
+            "font-weight": "bold",
+            "color": "#112932"
+             }); 
           
             $("#newsItemContainer").find('img').css({
                 'border': '1px solid #D6D6D6',
