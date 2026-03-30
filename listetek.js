@@ -174,9 +174,7 @@ function runProxyRssNtvTek(rssUrl, targetId) {
 
           $("#newsItemContainer span").css({
               "font-weight": "bold",
-              "color": "#112932",
-              "border-left": "5px solid #FFC107",
-              "padding-left": "15px"
+              "color": "#112932"
           });      
 
         /* BOŞ PARAGRAFLARI SİL */
@@ -273,9 +271,7 @@ function runRss2JsonTek(rssUrl, targetId) {
 
           $("#newsItemContainer span").css({
               "font-weight": "bold",
-              "color": "#112932",
-              "border-left": "5px solid #FFC107",
-              "padding-left": "15px"
+              "color": "#112932"
           });      
       
             $("#newsItemContainer").find('img').css({
