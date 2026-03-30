@@ -172,10 +172,12 @@ function runProxyRssNtvTek(rssUrl, targetId) {
                 'margin': '8px 0'
             });
 
-        $("#newsItemContainer span").css({
-            "font-weight": "bold",
-            "color": "#112932"
-        });
+          $("#newsItemContainer span").css({
+              "font-weight": "bold",
+              "color": "#112932",
+              "border-left": "5px solid #FFC107",
+              "padding-left": "15px"
+          });      
 
         /* BOŞ PARAGRAFLARI SİL */
         $("#newsItemContainer p").filter(function () {
@@ -269,11 +271,13 @@ function runRss2JsonTek(rssUrl, targetId) {
               $(this).before('<br>').after('<br>');
             });
 
-           $("#newsItemContainer span").css({
-            "font-weight": "bold",
-            "color": "#112932"
-             }); 
-          
+          $("#newsItemContainer span").css({
+              "font-weight": "bold",
+              "color": "#112932",
+              "border-left": "5px solid #FFC107",
+              "padding-left": "15px"
+          });      
+      
             $("#newsItemContainer").find('img').css({
                 'border': '1px solid #D6D6D6',
                 'border-radius': '5px',
